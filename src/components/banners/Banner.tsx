@@ -28,7 +28,7 @@ function Banner({}: Props) {
                     </div>
                 </div>
             </div>
-            <div className='min-h-full min-w-full bg-black opacity-75 absolute z-10 top-0 pt-16'>
+            <div className='min-h-full min-w-full bg-black opacity-80 absolute z-10 top-0 pt-16'>
             </div>
             <img src={BannerImage} width={100} height={100} className='w-full max-h-[50rem] h-auto pt-16' alt="" />
         </div>
