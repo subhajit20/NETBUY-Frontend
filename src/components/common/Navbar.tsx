@@ -2,9 +2,7 @@ import { NavLink } from "react-router-dom"
 import NETBUY from '../../assets/NETBUY-LOGO.png'
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
-import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { IoSunnyOutline } from "react-icons/io5";
-import { CiLogin } from "react-icons/ci";
 import { LiaUserCheckSolid } from "react-icons/lia";
 
 
@@ -24,12 +22,13 @@ function Navbar({}: Props) {
                     <input placeholder="Search Bar - Product url or name" type="search" className="input input-md bg-gray-200 border-none max-w-[40rem]" />
                 </div>
             </div>
-
-            <div className="dropdown lg:hidden pl-2 navbar-end">
-                <label className="my-2" tabIndex={0}><LiaUserCheckSolid className="w-6 h-6 text-brandColor" /></label>
-                <div className="dropdown-menu dropdown-menu-bottom-left">
-                    <a tabIndex={-1} className="dropdown-item text-sm menu-item"><CiLogin className="text-brandColor w-5 h-5" />Log In</a>
+            <div className="navbar-end lg:hidden">
+                <div className="dropdown">
+                    <label className="my-2" tabIndex={0}><LiaUserCheckSolid className="w-8 h-8 text-brandColor" /></label>
+                    <div className="dropdown-menu">
+                    <a tabIndex={-1} className="dropdown-item text-sm">Log In</a>
                     <a tabIndex={-1} className="dropdown-item text-sm">Sign Up</a>
+                    </div>
                 </div>
             </div>
             <div className="hidden lg:navbar-end">
