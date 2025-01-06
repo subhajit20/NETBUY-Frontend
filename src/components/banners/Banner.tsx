@@ -21,10 +21,10 @@ function Banner({}: Props) {
                     <h3 className='text-white text-sm lg:text-lg text-center'>effectively from the Chinese Market.</h3>
                 </div>
 
-                <div className='sub_heading pt-20 w-full flex justify-center items-center'>
-                    <div className='w-[15rem] sm:w-[20rem] lg:w-[40rem] bg-white flex justify-center items-center rounded-full px-5'>
-                        <BsSearch className='w-7 h-7' />
-                        <input type="search" className='input input-sm sm:input-md lg:input-lg placeholder:text-lg max-w-[40rem] border-none' placeholder='Start by Searching with a URL' />
+                <div className='sub_heading pt-10 sm:pt-20 w-full flex justify-center items-center'>
+                    <div className='w-[17rem] lg:w-[40rem] bg-white flex justify-center items-center rounded-full px-2 sm:px-5'>
+                        <BsSearch className='sm:w-7 w-3 h-3 sm:h-7' />
+                        <input type="search" className='input input-sm sm:input-md lg:input-lg placeholder:text-sm placeholder:sm:text-lg max-w-[40rem] border-none' placeholder='Start by Searching with a URL' />
                     </div>
                 </div>
             </div>
