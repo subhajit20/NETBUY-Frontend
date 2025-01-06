@@ -22,9 +22,9 @@ function Banner({}: Props) {
                 </div>
 
                 <div className='sub_heading pt-10 sm:pt-20 w-full flex justify-center items-center'>
-                    <div className='w-[17rem] sm:w-[25rem] lg:w-[40rem] bg-white flex justify-center items-center rounded-full px-2 sm:px-5'>
+                    <div className='w-[18rem] sm:w-[25rem] lg:w-[40rem] bg-white flex justify-center items-center rounded-full px-2 sm:px-5'>
                         <BsSearch className='sm:w-7 w-3 h-3 sm:h-7' />
-                        <input type="search" className='input input-sm sm:input-md lg:input-lg placeholder:text-sm placeholder:sm:text-lg max-w-[40rem] border-none' placeholder='Start by Searching with a Product URL' />
+                        <input type="search" className='input input-sm sm:input-md lg:input-lg placeholder:text-xs placeholder:sm:text-lg max-w-[40rem] border-none' placeholder='Start by Searching with a Product URL' />
                     </div>
                 </div>
             </div>
