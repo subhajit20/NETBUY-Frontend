@@ -13,7 +13,7 @@ function Banner({}: Props) {
             <div className='content absolute min-h-full min-w-full z-20 top-0 pt-16 flex flex-col justify-start items-center'>
                 <div className='super_heading pt-10 sm:pt-20 lg:pt-32'>
                     <h1 className='text-white text-2xl sm:text-4xl lg:text-7xl text-center'>Connecting the Chinese</h1>
-                    <h1 className='text-white text-lg sm:text-2xl lg:text-6xl text-center'>Market with the world</h1>
+                    <h1 className='text-white text-base sm:text-2xl lg:text-6xl text-center'>Market with the world</h1>
                 </div>
 
                 <div className='sub_heading hidden sm:block pt-10 lg:pt-20 max-w-[40rem] lg:max-w-[50rem] px-2'>
@@ -30,7 +30,7 @@ function Banner({}: Props) {
             </div>
             <div className='min-h-full min-w-full bg-black opacity-80 absolute z-10 top-0 pt-16'>
             </div>
-            <img src={BannerImage} width={100} height={100} className='w-full max-h-[50rem] h-auto pt-16' alt="" />
+            <img id="banner_img" src={BannerImage} width={100} height={100} className='w-full max-h-[50rem] h-auto pt-16' alt="banner" />
         </div>
     </div>
   )
