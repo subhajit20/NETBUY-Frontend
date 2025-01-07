@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Banner from "../banners/Banner";
 import OurServices from "./OurServices";
+import OrderingProcess from "./OrderingProcess";
 
 type Props = {}
 
@@ -18,6 +19,7 @@ function HomeRoot({}: Props) {
   dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
         <Banner />
         <OurServices />
+        <OrderingProcess />
         {/* <div className="min-h-screen bg-green-400"></div>
         <div className="min-h-screen bg-gray-400"></div> */}
       </div>

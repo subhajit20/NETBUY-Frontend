@@ -4,8 +4,8 @@ type Props = {}
 
 function OurServices({}: Props) {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-10" id="ourServices">
-        <h5 className="pt-10 md:pt-16" id="super_Heading">
+    <div className="min-h-[50rem] bg-gray-200 flex flex-col items-center justify-center p-10" id="ourServices">
+        <h5 className="pt-10 md:pt-5" id="super_Heading">
             <span className="bg-brandColor text-white px-5 py-1 rounded-full">Our Services</span>
         </h5>
         <div className="services_headings pt-10">
