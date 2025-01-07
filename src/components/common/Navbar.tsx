@@ -32,7 +32,7 @@ function Navbar({}: Props) {
                 </NavLink>
             </div>
             <div className="hidden sm:navbar-center">
-                <div className="flex items-center input input-md justify-center bg-gray-200 border-none w-[30rem] md:max-w-[40rem]">
+                <div className="flex items-center input input-md rounded-full justify-center bg-gray-200 border-none w-[30rem] md:max-w-[40rem]">
                     <BsSearch className="text-brandColor w-5 h-5" />
                     <input placeholder="Search Bar - Product url or name" type="search" className="input input-md bg-gray-200 border-none max-w-[40rem]" />
                 </div>
