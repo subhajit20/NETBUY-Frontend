@@ -15,10 +15,10 @@ function Sidebar({}: Props) {
                 <div>
                     {/* <h2 className="text-xl font-medium">Create your account</h2> */}
                     <label htmlFor="drawer-right" className="btn btn-sm btn-circle btn-ghost pt-14"><TiArrowBackOutline className="w-8 h-8 text-brandColor" /></label>
-                    <div className="menus">
-                        <NavLink to="" className={'menu-item text-lg text-right'}>Dashboard</NavLink>
-                        <NavLink to="" className={'menu-item text-lg text-right'}>Warehouse</NavLink>
-                        <NavLink to="" className={'menu-item text-lg text-right'}>Orders</NavLink>
+                    <div className="menus p-0 flex flex-col items-start">
+                        <NavLink to="" className={'text-lg text-right py-2 menu-item w-full'}>Dashboard</NavLink>
+                        <NavLink to="" className={'text-lg text-right py-2 menu-item w-full'}>Warehouse</NavLink>
+                        <NavLink to="" className={'text-lg text-right py-2 menu-item w-full'}>Orders</NavLink>
                     </div>
                 </div>
             </div>
