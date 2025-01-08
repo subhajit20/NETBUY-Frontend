@@ -25,7 +25,7 @@ function Navbar({}: Props) {
         }
     },[])
   return (
-        <nav className="navbar navbar-sticky navbar-glass bg-[#fff] rounded-none">
+        <nav className="navbar navbar-sticky navbar-glass bg-[#fff] rounded-none z-10">
             <div className="navbar-start">
                 <NavLink to="/" className="navbar-item">
                     <img src={NETBUY} height={120} width={120} alt="" />
@@ -39,11 +39,11 @@ function Navbar({}: Props) {
             </div>
             <div className="navbar-end lg:hidden">
                 <div className="dropdown">
-                    <label className="my-2" tabIndex={0}><LiaUserCheckSolid className="w-8 h-8 text-brandColor" /></label>
+                    <label className="my-2" tabIndex={0}><LiaUserCheckSolid className="w-9 h-9 text-brandColor" /></label>
                     <div className="dropdown-menu">
                         {
                             dropDownMenus.unAuthenticated.map((menu, index) => (
-                                <NavLink key={index} to={menu.link} className="dropdown-item text-sm">{menu.name}</NavLink>
+                                <NavLink key={index} to={menu.link} className="hover:bg-brandColor hover:text-white dropdown-item text-lg">{menu.name}</NavLink>
                             ))
                         }
                     </div>
@@ -54,7 +54,7 @@ function Navbar({}: Props) {
                 <a className="navbar-item"><HiOutlineShoppingCart className="w-7 h-7" /></a>
                         {
                             dropDownMenus.unAuthenticated.map((menu, index) => (
-                                <NavLink key={index} to={menu.link} className="navbar-item btn btn-sm bg-brandColor text-white">{menu.name}</NavLink>
+                                <NavLink key={index} to={menu.link} className="btn btn-sm text-base hover:bg-blue-800 hover:text-white bg-brandColor text-white transition-all duration-200 ease-linear">{menu.name}</NavLink>
                             ))
                         }
             </div>

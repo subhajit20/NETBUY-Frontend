@@ -13,7 +13,7 @@ function OrderingCard(props: Props) {
   return (
     <div className="service_cards hover:scale-[1.05] transition-all duration-300 cursor-pointer ease-linear card card-image-cover shadow-none rounded-none bg-transparent">
                 <div className="card-body flex flex-col justify-center items-center">
-                <div className="avatar bg-brandColor text-white flex justify-center items-center">
+                <div className="avatar avatar-xl bg-brandColor text-white flex justify-center items-center">
                     {icon}
                 </div>
                     <h2 className="card-header text-lg text-center">{orderingSuperHeading}</h2>

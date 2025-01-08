@@ -8,7 +8,7 @@ type Props = {}
 function Banner({}: Props) {
     
   return (
-    <div id="banner" className='relative'>
+    <div id="banner" className='relative z-0'>
         <div>
             <div className='content absolute min-h-full min-w-full z-20 top-0 pt-16 flex flex-col justify-start items-center'>
                 <div className='super_heading pt-10 sm:pt-20 lg:pt-32'>

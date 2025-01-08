@@ -4,6 +4,7 @@ import { RiUserLine } from "react-icons/ri";
 import { IoReorderFour } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+// import Sidebar from "./Sidebar";
 
 type Props = {}
 
@@ -21,9 +22,10 @@ function FloatMenu({}: Props) {
                 </NavLink>
                 <NavLink to="/" className={"btn bg-transparent hover:bg-white hover:rounded-full hover:text-brandColor text-white"}><HiOutlineShoppingCart className="w-6 h-6" /></NavLink>
                 <NavLink to="/" className={"btn bg-transparent hover:bg-white hover:rounded-full hover:text-brandColor text-white"}><RiUserLine className="w-6 h-6" /></NavLink>
-                <NavLink to="/" className={"btn bg-transparent hover:bg-white hover:rounded-full hover:text-brandColor text-white"}><IoReorderFour className="w-6 h-6" /></NavLink>
+                <label htmlFor="drawer-right" className={"btn bg-transparent hover:bg-white hover:rounded-full hover:text-brandColor text-white"}><IoReorderFour className="w-6 h-6" /></label>
             </nav>
         </div>
+        {/* <Sidebar /> */}
     </div>
   )
 }
