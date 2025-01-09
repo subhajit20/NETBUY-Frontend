@@ -39,7 +39,7 @@ function Navbar({}: Props) {
             </div>
             <div className="navbar-end lg:hidden">
                 <div className="dropdown">
-                    <label className="my-2" tabIndex={0}><LiaUserCheckSolid className="w-9 h-9 text-brandColor" /></label>
+                    <label className="my-2 cursor-pointer" tabIndex={0}><LiaUserCheckSolid className="w-9 h-9 text-brandColor" /></label>
                     <div className="dropdown-menu">
                         {
                             dropDownMenus.unAuthenticated.map((menu, index) => (
