@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Banner from "../banners/Banner";
 import OurServices from "./OurServices";
 import OrderingProcess from "./OrderingProcess";
+import ShippingRates from "./ShippingRates";
 
 type Props = {}
 
@@ -20,6 +21,7 @@ function HomeRoot({}: Props) {
         <Banner />
         <OurServices />
         <OrderingProcess />
+        <ShippingRates />
         {/* <div className="min-h-screen bg-green-400"></div>
         <div className="min-h-screen bg-gray-400"></div> */}
       </div>
