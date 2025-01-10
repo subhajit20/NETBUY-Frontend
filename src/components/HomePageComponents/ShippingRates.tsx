@@ -37,15 +37,15 @@ function ShippingRates({}: Props) {
                     <div className="lower flex justify-start gap-x-5 ">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥235 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
                         <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥55 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
                         <h4 className="lg:flex hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Delivery Time</p>
-                            <p className="text-base text-gray-900 font-normal">5-10 days</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
                         <div className="pl-10">
@@ -62,15 +62,15 @@ function ShippingRates({}: Props) {
                     <div className="lower flex justify-start gap-x-5">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥235 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
                         <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥55 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
                         <h4 className="lg:flex hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Delivery Time</p>
-                            <p className="text-base text-gray-900 font-normal">5-10 days</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
                         <div className="pl-10">
@@ -87,15 +87,15 @@ function ShippingRates({}: Props) {
                     <div className="lower flex justify-start gap-x-5">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥235 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
                         <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
-                            <p className="text-base text-gray-900 font-normal">CN￥55 / 500G</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
                         <h4 className="lg:flex hidden flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Delivery Time</p>
-                            <p className="text-base text-gray-900 font-normal">5-10 days</p>
+                            <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
                         <div className="pl-10">
