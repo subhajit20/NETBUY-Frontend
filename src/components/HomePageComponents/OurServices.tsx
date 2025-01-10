@@ -1,13 +1,12 @@
-import ServiceCardContainer from "./ServiceCardContainer"
+import ServiceCardContainer from "./ServiceCardContainer";
+import SuperHeader from "../common/SuperHeader";
 
 type Props = {}
 
 function OurServices({}: Props) {
   return (
     <div className="min-h-[50rem] bg-gray-200 flex flex-col items-center justify-center p-10" id="ourServices">
-        <h5 className="pt-10 md:pt-5" id="super_Heading">
-            <span className="bg-brandColor text-white px-5 py-1 rounded-full">Our Services</span>
-        </h5>
+        <SuperHeader headingText="Our Services" />
         <div className="services_headings pt-10">
             <h1 className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-7xl">
                 We offer our customers 
