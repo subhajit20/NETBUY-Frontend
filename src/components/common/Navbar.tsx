@@ -5,7 +5,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { IoSunnyOutline } from "react-icons/io5";
 import { LiaUserCheckSolid } from "react-icons/lia";
 import { useMemo } from "react";
-
+import { Outlet } from "react-router-dom";
 
 type Props = {}
 
@@ -25,6 +25,7 @@ function Navbar({}: Props) {
         }
     },[])
   return (
+        <>
         <nav className="navbar navbar-sticky navbar-glass bg-[#fff] rounded-none z-10">
             <div className="navbar-start">
                 <NavLink to="/" className="navbar-item">
@@ -59,6 +60,8 @@ function Navbar({}: Props) {
                         }
             </div>
         </nav>
+        <Outlet />
+        </>
   )
 }
 
