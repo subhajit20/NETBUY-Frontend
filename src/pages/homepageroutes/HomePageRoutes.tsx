@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from '../../components/common/Navbar';
 import HomeRoot from '../../components/HomePageComponents/HomeRoot';
 import FloatMenu from '../../components/common/FloatMenu';
+import RightFloatingNavbar from '../../components/common/RightFloatingNavbar';
 
 function HomePageRoutes() {
   return (
@@ -14,6 +15,7 @@ function HomePageRoutes() {
                     </Route>
                 </Routes>
             <FloatMenu />
+            <RightFloatingNavbar />
         </div>
     </React.Fragment>
   )

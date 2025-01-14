@@ -25,21 +25,21 @@ function ShippingRates({}: Props) {
                     <p className='text-white text-sm max-w-md'>Estimate your international shipping fee ahead of time through shipping fee estimation</p>
                     <a className='btn btn-lg bg-brandColor text-white rounded-full'>Cost Calculator</a>
                 </div>
-                <img src={ShippingImage} width={700} height={700} alt="" className='min-w-full' />
+                <img src={ShippingImage} width={700} height={700} alt="shipp_rates" className='min-w-full' />
             </div>
             <div id="shippingRates_card_container" className="flex flex-col justify-center gap-5 scale-[1] xl:scale-[0.92]">
                 <div className="transition-all duration-200 ease-linear hover:scale-[1.05] cursor-pointer shippingRates_card bg-white p-5 rounded-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex flex-col gap-y-6">
-                    <div className="upper flex justify-start items-center gap-x-5">
+                    <div className="upper flex flex-wrap justify-start items-center gap-x-5">
                         <h4 className='font-bold'>SHIPS TO USA</h4>
-                        <h4>HZ-FEDEX-F</h4>
-                        <h5 className="text-sm text-gray-400 font-normal">(0-20kg)</h5>
+                        <h4 className='font-semibold'>HZ-FEDEX-F</h4>
+                        <h5 className=" text-gray-400 font-normal">(0-20kg)</h5>
                     </div>
-                    <div className="lower flex justify-start gap-x-5 ">
+                    <div className="lower flex flex-wrap justify-end gap-x-5 ">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
-                        <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
+                        <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
@@ -48,23 +48,23 @@ function ShippingRates({}: Props) {
                             <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
-                        <div className="pl-10">
+                        <div className="pl-10 pt-5 sm:pt-0 ">
                             <a className="btn border-[2px] border-brandColor rounded-full">View</a>
                         </div>
                     </div>
                 </div>
                 <div className="transition-all duration-200 ease-linear hover:scale-[1.05] cursor-pointer shippingRates_card bg-white p-5 rounded-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex flex-col gap-y-6">
-                    <div className="upper flex justify-start gap-x-5 items-center">
+                    <div className="upper flex flex-wrap justify-start gap-x-5 items-center">
                         <h4 className='font-bold'>SHIPS TO USA</h4>
-                        <h4>HZ-FEDEX-F</h4>
+                        <h4 className='font-semibold'>HZ-FEDEX-F</h4>
                         <h5 className="text-sm text-gray-400 font-normal">(0-20kg)</h5>
                     </div>
-                    <div className="lower flex justify-start gap-x-5">
+                    <div className="lower flex flex-wrap justify-end gap-x-5">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
-                        <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
+                        <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
@@ -73,23 +73,23 @@ function ShippingRates({}: Props) {
                             <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
-                        <div className="pl-10">
+                        <div className="pl-10 pt-5 sm:pt-0 ">
                             <a className="btn border-[2px] border-brandColor rounded-full">View</a>
                         </div>
                     </div>
                 </div>
                 <div className="transition-all duration-200 ease-linear hover:scale-[1.05] cursor-pointer shippingRates_card bg-white p-5 rounded-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex flex-col gap-y-6">
-                    <div className="upper flex justify-start gap-x-5 items-center">
+                    <div className="upper flex flex-wrap justify-start gap-x-5 items-center">
                         <h4 className='font-bold'>SHIPS TO USA</h4>
-                        <h4>HZ-FEDEX-F</h4>
+                        <h4 className='font-semibold'>HZ-FEDEX-F</h4>
                         <h5 className="text-sm text-gray-400 font-normal">(0-20kg)</h5>
                     </div>
-                    <div className="lower flex justify-start gap-x-5">
+                    <div className="lower flex flex-wrap justify-end gap-x-5">
                         <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">First Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥235 / 500G</p>
                         </h4>
-                        <h4 className="flex xl:hidden flex-col justify-center gap-y-0 items-start">
+                        <h4 className="flex flex-col justify-center gap-y-0 items-start">
                             <p className="text-sm text-gray-400 font-normal">Additional Weight</p>
                             <p className="text-xs sm:text-base text-gray-900 font-normal">CN￥55 / 500G</p>
                         </h4>
@@ -98,7 +98,7 @@ function ShippingRates({}: Props) {
                             <p className="text-xs sm:text-base text-gray-900 font-normal">5-10 days</p>
                         </h4>
 
-                        <div className="pl-10">
+                        <div className="pl-10 pt-5 sm:pt-0 ">
                             <a className="btn border-[2px] border-brandColor rounded-full">View</a>
                         </div>
                     </div>
