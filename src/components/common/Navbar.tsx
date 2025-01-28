@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom"
 import NETBUY from '../../assets/NETBUY-LOGO.png'
 import { BsSearch } from "react-icons/bs";
-import { HiOutlineShoppingCart } from "react-icons/hi2";
-import { IoSunnyOutline } from "react-icons/io5";
+import { IoMdArrowDropdown } from "react-icons/io";
 import { LiaUserCheckSolid } from "react-icons/lia";
 import { useMemo } from "react";
 import { Outlet } from "react-router-dom";
+import LoginButton from "./buttons/login/LoginButton";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
+import { IoSunnyOutline } from "react-icons/io5";
 
 type Props = {}
 
@@ -51,11 +53,18 @@ function Navbar({}: Props) {
                 </div>
             </div>
             <div className="hidden lg:navbar-end">
-                <a className="navbar-item"><IoSunnyOutline className="w-7 h-7" /></a>
-                <a className="navbar-item"><HiOutlineShoppingCart className="w-7 h-7" /></a>
+                <a className="navbar-item hidden xl:block"><IoSunnyOutline className="w-6 h-6" /></a>
+                <a className="navbar-item"><HiOutlineShoppingCart className="w-6 h-6" /></a>
+                <div className="dropdown hidden xl:block dropdown-hover">
+                    <label className="btn btn-sm bg-transparent my-2" tabIndex={0}>Company <IoMdArrowDropdown className="text-brandColor w-6 h-6" /></label>
+                    <div className="dropdown-menu">
+                        <NavLink to="/service" className="dropdown-item text-sm">Contact Us</NavLink>
+                        <NavLink to="/" tabIndex={-1} className="dropdown-item text-sm">About Us</NavLink>
+                    </div>
+                </div>
                         {
                             dropDownMenus.unAuthenticated.map((menu, index) => (
-                                <NavLink key={index} to={menu.link} className="btn btn-sm text-base hover:bg-blue-800 hover:text-white bg-brandColor text-white transition-all duration-200 ease-linear">{menu.name}</NavLink>
+                                <LoginButton key={index} to={menu.link} btnName={menu.name} />
                             ))
                         }
             </div>

@@ -1,4 +1,4 @@
-import NETBUYLOGO from '../../assets/NETBUY-LOGO.png'
+import NETBUYLOGO from '../../assets/NETBUY-LOGO.png';
 
 function CommonFooter() {
   return (

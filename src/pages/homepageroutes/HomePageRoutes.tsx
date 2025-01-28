@@ -4,14 +4,16 @@ import Navbar from '../../components/common/Navbar';
 import HomeRoot from '../../components/HomePageComponents/HomeRoot';
 import FloatMenu from '../../components/common/FloatMenu';
 import RightFloatingNavbar from '../../components/common/RightFloatingNavbar';
+import ContactUs from '../../components/contactuscomponents/ContactUs';
 
 function HomePageRoutes() {
   return (
     <React.Fragment>
-        <div className='min-h-screen relative'>
+        <div className='relative hoom_root'>
                 <Routes>
                     <Route path="/" element={<Navbar />}>
                         <Route index Component={HomeRoot} />
+                        <Route path="/service" Component={ContactUs} />
                     </Route>
                 </Routes>
             <FloatMenu />

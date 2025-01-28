@@ -1,7 +1,8 @@
 import BannerImage from '../../assets/BANNER.webp';
 import { BsSearch } from "react-icons/bs";
 import './banner.css'
-// import { useEffect } from 'react';
+// import DiscordButton from '../common/buttons/discord/DiscordButton';
+// import InstaButton from '../common/buttons/instagram/InstaButton';
 
 type Props = {}
 
@@ -21,12 +22,16 @@ function Banner({}: Props) {
                     <h3 className='text-white text-sm lg:text-lg text-center'>effectively from the Chinese Market.</h3>
                 </div>
 
-                <div className='sub_heading pt-10 sm:pt-20 w-full flex justify-center items-center'>
+                <div className='sub_heading pt-5 sm:pt-20 w-full flex justify-center items-center'>
                     <div className='w-[18rem] sm:w-[25rem] lg:w-[40rem] bg-white flex justify-center items-center rounded-full px-2 sm:px-5'>
                         <BsSearch className='sm:w-7 w-3 h-3 sm:h-7' />
                         <input type="search" className='input input-sm sm:input-md lg:input-lg placeholder:text-xs placeholder:sm:text-lg max-w-[40rem] border-none' placeholder='Start by Searching with a Product URL' />
                     </div>
                 </div>
+                {/* <div className='flex justify-between md:justify-around gap-2 pt-3 md:pt-10 w-full px-20'>
+                    <DiscordButton />
+                    <InstaButton />
+                </div> */}
             </div>
             <div className='min-h-full min-w-full bg-black opacity-80 absolute z-10 top-0 pt-16'>
             </div>
