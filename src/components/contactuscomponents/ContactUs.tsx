@@ -1,5 +1,6 @@
 // ContactUs.js
 import { useState } from 'react';
+import SocialButton from '../common/buttons/socialbuttons/SocialButton';
 import './contactus.css';
 
 const ContactUs = () => {
@@ -60,10 +61,12 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="social-links">
-            <a href="#" className="social-link" aria-label="LinkedIn">💼</a>
+          <SocialButton />
+
+            {/* <a href="#" className="social-link" aria-label="LinkedIn">💼</a>
             <a href="#" className="social-link" aria-label="Twitter">🐦</a>
             <a href="#" className="social-link" aria-label="Instagram">📸</a>
-            <a href="#" className="social-link" aria-label="Website">🔗</a>
+            <a href="#" className="social-link" aria-label="Website">🔗</a> */}
           </div>
         </div>
 

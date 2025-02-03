@@ -1,6 +1,6 @@
 /* ContactUs.css */
 :root {
-    --primary-color: #3b82f6;
+    --primary-color: #0000FF;
     --primary-hover: #2563eb;
     --text-dark: #1f2937;
     --text-light: #6b7280;
@@ -38,7 +38,7 @@
   
   .contact-info {
     padding: clamp(2rem, 5vw, 4rem);
-    background: linear-gradient(160deg, var(--primary-color) 0%, #3b82f6 100%);
+    background: linear-gradient(160deg, var(--primary-color) 0%, #0000FF 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -286,3 +286,5 @@
       margin: 2rem;
     }
   }
+
+ 

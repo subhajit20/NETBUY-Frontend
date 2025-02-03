@@ -5,7 +5,10 @@ type Props = {}
 function ShippingRates({}: Props) {
   return (
     <div className="min-h-[50rem] bg-gray-700 flex flex-col items-center justify-center p-10" id="shipping_rates">
-        <SuperHeader headingText='Shipping Rates' />
+        {/* <SuperHeader headingText='Shipping Rates' /> */}
+        {/* <h5 className="pt-10 md:pt-5" id="super_Heading"> */}
+            <span className="bg-white text-brandColor px-5 py-1 rounded-full text-base md:text-lg lg:text-xl">Shipping Rates</span>
+        {/* </h5> */}
 
         <div className="services_headings block xl:hidden text-white pt-10">
             <h1 className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-7xl">
@@ -23,7 +26,7 @@ function ShippingRates({}: Props) {
                 <div className='absolute h-full w-full rounded-[40px] flex flex-col gap-y-4 justify-center items-start pl-20'>
                     <h1 className='text-white text-3xl max-w-lg'>We Provide The Most Efficient Logistics Services!</h1>
                     <p className='text-white text-sm max-w-md'>Estimate your international shipping fee ahead of time through shipping fee estimation</p>
-                    <a className='btn btn-lg bg-brandColor text-white rounded-full'>Cost Calculator</a>
+                    <a className='btn btn-lg bg-white text-brandColor  rounded-full'>Cost Calculator</a>
                 </div>
                 <img src={ShippingImage} width={700} height={700} alt="shipp_rates" className='min-w-full' />
             </div>
@@ -106,7 +109,7 @@ function ShippingRates({}: Props) {
             </div>
         </div>
         
-        <a className='btn btn-md xl:btn-lg bg-brandColor text-white rounded-full xl:hidden'>Cost Calculator</a>
+        <a className='btn btn-md xl:btn-lg bg-white text-brandColor rounded-full xl:hidden'>Cost Calculator</a>
     </div>
   )
 }
