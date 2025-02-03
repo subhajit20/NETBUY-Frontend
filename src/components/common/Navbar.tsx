@@ -21,8 +21,8 @@ function Navbar({}: Props) {
                 {name: "Log Out", link: "/"},
             ],
             unAuthenticated: [
-                {name: "Log In", link: "/"},
-                {name: "Sign Up", link: "/"},
+                {name: "Log In", link: "/auth/login"},
+                {name: "Sign Up", link: "/auth/signup"},
             ]
         }
     },[])

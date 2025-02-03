@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-import { MdQuestionAnswer } from "react-icons/md";
-
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
