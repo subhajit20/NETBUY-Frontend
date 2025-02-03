@@ -17,7 +17,7 @@ const FAQSection = () => {
     },
     {
       question: 'How long can I store my items in your warehouse?',
-      answer: 'You can store your items in our warehouse for 90 days for free, starting from the order status “In Warehouse”. To extend your warehouse storage after the 120 days, we charge a small fee of 15 yuan per order per month. If your items reach over 120 days and you haven’t shipped them or extended their storage, they’ll be automatically considered given up and will be destroyed.'
+      answer: 'You can store your items in our warehouse for 120 days for free, starting from the order status “In Warehouse”. To extend your warehouse storage after the 120 days, we charge a small fee of 2.5 € per order per month. If your items reach over 120 days and you haven’t shipped them or extended their storage, they’ll be automatically considered given up and will be destroyed.'
     }
   ];
 
