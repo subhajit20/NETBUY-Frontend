@@ -5,6 +5,7 @@ import HomeRoot from '../../components/HomePageComponents/HomeRoot';
 import FloatMenu from '../../components/common/FloatMenu';
 import RightFloatingNavbar from '../../components/common/RightFloatingNavbar';
 import ContactUs from '../../components/contactuscomponents/ContactUs';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 function HomePageRoutes() {
   return (
@@ -17,6 +18,7 @@ function HomePageRoutes() {
                     </Route>
                 </Routes>
             <FloatMenu />
+            <FloatingWhatsApp phoneNumber={''} accountName={''} />
             <RightFloatingNavbar />
         </div>
     </React.Fragment>

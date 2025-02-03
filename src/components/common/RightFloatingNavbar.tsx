@@ -10,7 +10,7 @@ type Props = {}
 
 function RightFloatingNavbar({}: Props) {
   return (
-    <div  className="fixed w-10 h-80 top-72 right-5 md:right-16">
+    <div  className="fixed w-10 h-80 top-60 right-5 md:right-16">
         <div id="right_floating_nav" className="flex flex-col justify-center items-center bg-gray-300 gap-y-2 rounded-full py-2">
             <div className="">
                 <NavLink to="/" className="btn bg-transparent hover:rounded-full group text-white">
