@@ -92,7 +92,7 @@ const FAQSection = () => {
 
       <div className='py-5 flex flex-col justify-center items-center'>
           <h1 className='text-center text-lg md:text-2xl py-5'>Still have questions that aren’t answered above?</h1>
-          <a href="#service" className='btn btn-sm md:btn-lg bg-brandColor text-white rounded-full'>Contact Us Today</a>
+          <a href="#service" className='hover:scale-[0.9] btn btn-sm md:btn-lg bg-brandColor text-white rounded-full'>Contact Us Today</a>
       </div>
     </div>
   );
