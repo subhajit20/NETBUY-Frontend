@@ -26,55 +26,70 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold menu-item justify-center items-center bg-transparent text-gray-800 mb-8 text-center hover:bg-transparent">
-        Frequently Asked Questions <MdQuestionAnswer className='text-brandColor' />
-      </h2>
-      
-      <div className="space-y-4">
-        {faqItems.map((item, index) => (
-          <div 
-            key={index}
-            className={`bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ${
-              activeIndex === index ? 'border-l-4 border-indigo-500' : ''
-            }`}
-          >
-            <button
-              onClick={() => toggleAccordion(index)}
-              className="w-full px-6 py-4 text-left flex justify-between items-center group"
-              aria-expanded={activeIndex === index}
-            >
-              <div className="flex items-start space-x-4">
-                {/* Index number with circle */}
-                <div className="bg-indigo-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
-                  {index + 1}
-                </div>
-                <span className="text-lg font-medium text-white group-hover:text-white transition-colors">
-                  {item.question}
-                </span>
-              </div>
-              {activeIndex === index ? (
-                <FiChevronUp className="w-6 h-6 text-indigo-500 transition-transform" />
-              ) : (
-                <FiChevronDown className="w-6 h-6 text-gray-400 group-hover:text-indigo-500 transition-colors" />
-              )}
-            </button>
-            
-            <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+          Frequently Asked Questions
+          <span className="block mt-2 h-1 w-20 bg-brandColor mx-auto rounded-full" />
+        </h2>
+
+        <div className="space-y-6 max-w-3xl mx-auto">
+          {faqItems.map((item, index) => (
+            <div 
+              key={index}
+              className={`group relative transition-all duration-200 ease-out ${
+                activeIndex === index ? 'scale-[1.02]' : 'hover:scale-[1.01]'
               }`}
             >
-              <div className="px-6 pb-4 ml-12 text-gray-600">
-                {item.answer}
+              <div className={`absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-100 to-white opacity-0 transition-all 
+                ${activeIndex === index ? 'opacity-100' : 'group-hover:opacity-100'}`}
+              />
+              
+              <div className={`relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md 
+                transition-all duration-200 border border-white/20 ${
+                  activeIndex === index ? 'ring-1 ring-indigo-500/20' : ''
+                }`}
+              >
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full px-6 py-5 md:py-6 text-left flex items-start justify-between space-x-4"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className={`bg-indigo-500 text-white w-9 h-9 md:w-10 md:h-10 rounded-xl flex 
+                      items-center justify-center flex-shrink-0 transition-all duration-200 ${
+                        activeIndex === index ? 'rotate-12 scale-110' : ''
+                      }`}
+                    >
+                      <span className="font-medium text-lg">{index + 1}</span>
+                    </div>
+                    <span className={`text-base md:text-2xl font-semibold tracking-tight text-white 
+                      leading-snug transition-colors `}
+                    >
+                      {item.question}
+                    </span>
+                  </div>
+                  {activeIndex === index ? (
+                    <FiChevronUp className="w-7 h-7 text-indigo-500 mt-1 flex-shrink-0" />
+                  ) : (
+                    <FiChevronDown className="w-7 h-7 text-gray-400 mt-1 flex-shrink-0 group-hover:text-indigo-500" />
+                  )}
+                </button>
+
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="px-6 pb-6 ml-16 md:ml-20">
+                    <p className="text-base md:text-xl text-gray-600 leading-relaxed">
+                      {item.answer}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className='py-10 flex flex-col justify-center items-center'>
-      <h1 className='text-lg md:text-2xl text-center'>Still have questions that aren’t answered above?</h1>
-      <a href="#service" className='btn btn-sm md:btn-lg rounded-full bg-brandColor text-white my-5'>Contact us Today</a>
+          ))}
+        </div>
       </div>
     </div>
   );

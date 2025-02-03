@@ -33,7 +33,7 @@ function RightFloatingNavbar({}: Props) {
                 </NavLink>
             </div>
             <div>
-                <button onClick={()=> window.scrollTo(0,0)}><FaArrowAltCircleUp className="w-6 h-6 text-gray-400 hover:text-brandColor" /></button>
+                <button onClick={()=> window.scrollTo(0,0)}><FaArrowAltCircleUp className="w-6 h-6 text-gray-400 hover:text-white" /></button>
             </div>
         </div>
     </div>
