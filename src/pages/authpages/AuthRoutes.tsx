@@ -10,7 +10,7 @@ function AuthRoutes({}: Props) {
         <div className='relative auth_root'>
                 <Routes>
                         <Route path={"/login"} Component={LoginPage} />
-                        <Route path="/signup" Component={SignUpPage} />
+                        <Route path={"/register"} Component={SignUpPage} />
                 </Routes>
         </div>
     </React.Fragment>

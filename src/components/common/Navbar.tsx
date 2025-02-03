@@ -22,7 +22,7 @@ function Navbar({}: Props) {
             ],
             unAuthenticated: [
                 {name: "Log In", link: "/auth/login"},
-                {name: "Sign Up", link: "/auth/signup"},
+                {name: "Sign Up", link: "/auth/register"},
             ]
         }
     },[])
